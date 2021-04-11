@@ -9,6 +9,14 @@ function Calculator() {
 
   useEffect(() => {}, [op, nextValue, previousValue]);
 
+  const CalculatorOperations = {
+    "*": (x, y) => x * y,
+    "/": (x, y) => x / y,
+    "+": (x, y) => x + y,
+    "-": (x, y) => x - y,
+    "=": (x, y) => y,
+  };
+
   return (
     <div className="calculator">
       <div className="calculator-input">
