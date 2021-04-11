@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CalculatorKey from "./CalculatorKey";
 import "./Calculator.css";
 
 function Calculator() {
+  const [previousValue, setPreviousValue] = useState(null);
+  const [nextValue, setNextValue] = useState("0");
+  const [operation, setOperation] = useState(null);
+
+  useEffect(() => {}, [op, nextValue, previousValue]);
+
   return (
     <div className="calculator">
       <div className="calculator-input">
